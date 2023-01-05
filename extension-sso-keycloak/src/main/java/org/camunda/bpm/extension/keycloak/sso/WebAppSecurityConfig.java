@@ -1,6 +1,6 @@
 package org.camunda.bpm.extension.keycloak.sso;
 
-//import org.camunda.bpm.webapp.impl.security.auth.ContainerBasedAuthenticationFilter;
+import org.camunda.bpm.webapp.impl.security.auth.ContainerBasedAuthenticationFilter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingClass;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -56,7 +56,7 @@ public class WebAppSecurityConfig extends WebSecurityConfigurerAdapter {
     public FilterRegistrationBean containerBasedAuthenticationFilter(){
 
         FilterRegistrationBean filterRegistration = new FilterRegistrationBean();
-//        filterRegistration.setFilter(new ContainerBasedAuthenticationFilter());
+        filterRegistration.setFilter(new ContainerBasedAuthenticationFilter());
         filterRegistration.setInitParameters(Collections.singletonMap("authentication-provider", "org.camunda.bpm.extension.keycloak.run.sso.KeycloakAuthenticationProvider"));
         filterRegistration.setOrder(101); // make sure the filter is registered after the Spring Security Filter Chain
         filterRegistration.addUrlPatterns("/app/*");
