@@ -1,4 +1,4 @@
-package org.camunda.bpm.extension.keycloak.run.rest;
+package org.camunda.bpm.extension.keycloak.rest;
 
 import org.springframework.security.oauth2.core.OAuth2Error;
 import org.springframework.security.oauth2.core.OAuth2TokenValidator;

@@ -1,4 +1,4 @@
-package org.camunda.bpm.extension.keycloak.run.rest;
+package org.camunda.bpm.extension.keycloak.rest;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

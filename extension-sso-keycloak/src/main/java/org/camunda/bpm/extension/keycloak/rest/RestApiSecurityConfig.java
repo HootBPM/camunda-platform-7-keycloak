@@ -1,4 +1,4 @@
-package org.camunda.bpm.extension.keycloak.run.rest;
+package org.camunda.bpm.extension.keycloak.rest;
 
 import org.camunda.bpm.engine.IdentityService;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

@@ -7,7 +7,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>camunda-platform-7-sso-keycloak</artifactId>
-  <name>Camunda Platform 7 - sso - keycloak - extension</name>
+  <name>Camunda Platform 7 - engine plugins - identity - keycloak - extension - SSO</name>
   <description>Keycloak SSO Plugin for Camunda Platform 7</description>
   <build>
     <plugins>
@@ -101,24 +101,6 @@
     </plugins>
   </build>
   <dependencies>
-    <dependency>
-      <groupId>org.camunda.commons</groupId>
-      <artifactId>camunda-commons-utils</artifactId>
-      <version>1.12.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.camunda.commons</groupId>
-      <artifactId>camunda-commons-typed-values</artifactId>
-      <version>7.18.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.camunda.commons</groupId>
-      <artifactId>camunda-commons-logging</artifactId>
-      <version>1.12.0</version>
-      <scope>compile</scope>
-    </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
